@@ -1,0 +1,16 @@
+# Run the following command to update the url that spree uses
+docker exec spree bundle exec rails runner "Spree::Store.default.update(url: 'https://10.255.72.174')"
+
+# Generate the self-signed certificate
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout certs/server.key -out certs/server.crt -subj "/CN=localhost"
+
+# Add http and https to the firewall
+sudo firewall-cmd --permanent --add-service=http
+sudo firewall-cmd --permanent --add-service=https
+sudo firewall-cmd --reload
+
+# Build the docker image
+docker build -t spree .
+
+# Enter rails from docker bash
+bundle exec rails console
