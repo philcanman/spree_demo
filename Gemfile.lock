@@ -185,7 +185,7 @@ GEM
       logger (~> 1.5)
     coderay (1.1.3)
     concurrent-ruby (1.3.5)
-    connection_pool (2.5.4)
+    connection_pool (2.5.5)
     console (1.34.2)
       fiber-annotation
       fiber-local (~> 1.1)
@@ -568,7 +568,7 @@ GEM
       i18n
     rbs (3.9.5)
       logger
-    rdoc (6.15.1)
+    rdoc (6.16.1)
       erb
       psych (>= 4.0.0)
       tsort
@@ -673,14 +673,14 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    sentry-rails (6.1.0)
+    sentry-rails (6.2.0)
       railties (>= 5.2.0)
-      sentry-ruby (~> 6.1.0)
-    sentry-ruby (6.1.0)
+      sentry-ruby (~> 6.2.0)
+    sentry-ruby (6.2.0)
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
-    sentry-sidekiq (6.1.0)
-      sentry-ruby (~> 6.1.0)
+    sentry-sidekiq (6.2.0)
+      sentry-ruby (~> 6.2.0)
       sidekiq (>= 5.0)
     sidekiq (8.0.9)
       connection_pool (>= 2.5.0)
